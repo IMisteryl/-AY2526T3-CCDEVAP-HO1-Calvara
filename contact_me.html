@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+
+    <header>
+        <h1>> ping contact_server</h1>
+        <nav>
+            <a href="index.html">HOME</a> | 
+            <a href="about_me.html">ABOUT ME</a> | 
+            <a href="archive.html">ARCHIVE</a> | 
+            <strong>CONTACT ME</strong>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <p>Need to find me? Drop a packet below.</p>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend><strong>Transmission Protocol (Contact Form)</strong></legend>
+                
+                <p>
+                    <label for="alias">Alias / Name:</label>
+                    <input type="text" id="alias" name="alias" required>
+                </p>
+
+                <p>
+                    <label for="contact">Return Address (Contact Information):</label>
+                    <input type="contact" id="contact" name="contact" required>
+                </p>
+
+                <p>
+                    <label for="subject">Nature of Inquiry:</label>
+                    <select id="subject" name="subject">
+                        <option value="collab">Study Group / Collaboration</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="inq">Inquiry</option>
+                        <option value="help">Asking for Help</option>
+                        <option value="chat">Others</option>
+                    </select>
+                </p>
+
+                <p>Preferred Contact Method:</p>
+                <input type="radio" id="discord" name="contact_method" value="discord">
+                <label for="discord">Discord</label><br>
+                <input type="radio" id="email" name="contact_method" value="email">
+                <label for="email">Email</label><br>
+                <input type="radio" id="viber" name="contact_method" value="viber">
+                <label for="viber">Viber</label><br>
+                <input type="radio" id="fb" name="contract_method" value="fb">
+                <label for="fb">Facebook Messenger</label><br>
+
+                <p>
+                    <label for="meetup">If collaborating, suggest a date (PST):</label><br>
+                    <input type="date" id="meetup" name="meetup">
+                </p>
+
+                <p>
+                    <label for="message">Message Payload:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="45" placeholder="Enter your data here..."></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="human" name="human" required>
+                    <label for="human">I verify I am a human, not a bot</label>
+                </p>
+
+                <input type="submit" value="Send Packet">
+                <input type="reset" value="Clear Cache">
+            </fieldset>
+        </form>
+    </main>
+
+    <br><br>
+    <footer>
+        <hr>
+        <p><small>Built for class :)</small></p>
+    </footer>
+
+</body>
+</html>
