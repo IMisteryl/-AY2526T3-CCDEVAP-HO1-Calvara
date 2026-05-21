@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>About Me</title>
 </head>
 <body>
-
-    <header>
+    <header class="page-header">
         <h1>> whoami</h1>
-        <nav>
+        <nav class="main-navigation">
             <a href="index.html">HOME</a> | 
             <strong>ABOUT ME</strong> | 
             <a href="archive.html">ARCHIVE</a> | 
@@ -17,18 +17,18 @@
         <hr>
     </header>
 
-    <main>
+    <main class="content-wrapper">
         <article>
-            <figure>
-                <img src="media/kofi.jpg" alt="A photo of me at Asterisko cafe" width="200">
-                <figcaption>Me making a pourover coffee</figcaption>
+            <figure style="text-align: center; margin-bottom: 30px;">
+                <img src="media/kofi.jpg" alt="A photo of me at Asterisko cafe" width="200" style="border: 2px solid var(--border-color);">
+                <figcaption style="color: var(--text-muted); margin-top: 10px;">Me making a pourover coffee</figcaption>
             </figure>
 
             <h2>My Background</h2>
             <p>I spend most of my time tinkering with my Windows machine, playing video games, listening to music, and being on the internet. <br><br>
                 I have experience in building computers, troubleshooting Windows, and setting up routers.
             </p>
-        
+            <br>
 
             <h3>Core Competencies</h3>
             <ul>
@@ -38,8 +38,8 @@
             </ul>
 
             <br>
-            <section id="education">
-                <table border="1" cellpadding="10">
+            <section>
+                <table id="academic-history">
                     <caption><strong>Academic Background</strong></caption>
                     <thead>
                         <tr>
@@ -70,11 +70,8 @@
         </article>
     </main>
 
-    <br><br>
-    <footer>
-        <hr>
+    <footer class="site-footer">
         <p><small>Built for class :)</small></p>
     </footer>
-
 </body>
 </html>
