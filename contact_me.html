@@ -24,10 +24,22 @@
                 <legend style="color: var(--accent-color); padding: 0 10px;"><strong>Transmission Protocol (Contact Form)</strong></legend>
                 
                 <div class="form-group">
+                    <p>Preferred Contact Method:</p>
+                    <input type="radio" id="discord" name="contact_method" value="discord">
+                    <label for="discord">Discord</label><br>
+                    <input type="radio" id="email" name="contact_method" value="email">
+                    <label for="email">Email</label><br>
+                    <input type="radio" id="viber" name="contact_method" value="viber">
+                    <label for="viber">Viber</label><br>
+                    <input type="radio" id="fb" name="contract_method" value="fb">
+                    <label for="fb">Facebook Messenger</label><br>
+                </div>
+
+                <div class="form-group">
                     <label for="alias">Alias / Name:</label>
                     <input type="text" id="alias" name="alias" required>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="contact">Return Address (Contact Information):</label>
                     <input type="text" id="contact" name="contact" required>
@@ -42,18 +54,6 @@
                         <option value="help">Asking for Help</option>
                         <option value="chat">Others</option>
                     </select>
-                </div>
-
-                <div class="form-group">
-                    <p>Preferred Contact Method:</p>
-                    <input type="radio" id="discord" name="contact_method" value="discord">
-                    <label for="discord">Discord</label><br>
-                    <input type="radio" id="email" name="contact_method" value="email">
-                    <label for="email">Email</label><br>
-                    <input type="radio" id="viber" name="contact_method" value="viber">
-                    <label for="viber">Viber</label><br>
-                    <input type="radio" id="fb" name="contract_method" value="fb">
-                    <label for="fb">Facebook Messenger</label><br>
                 </div>
 
                 <div class="form-group">
